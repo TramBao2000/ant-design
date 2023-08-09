@@ -51,15 +51,6 @@ const App: React.FC = () => {
       <Upload {...props}>
         <Button icon={<UploadOutlined />}>Select File</Button>
       </Upload>
-      <Button
-        type="primary"
-        onClick={handleUpload}
-        disabled={fileList.length === 0}
-        loading={uploading}
-        style={{ marginTop: 16 }}
-      >
-        {uploading ? 'Uploading' : 'Start Upload'}
-      </Button>
     </>
   );
 };
